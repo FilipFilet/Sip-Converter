@@ -1,3 +1,4 @@
+/* global styles */
 * {
   padding: 0;
   margin: 0;
@@ -6,4 +7,89 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f0f0f0;
+}
+
+/* wrappers */
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: blue;
+}
+
+#converterWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  align-items: center;
+}
+
+#headerWrapper, #currentConversions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Edit popup form */
+#dark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #0000008f;
+  width: 100%;
+  height: 100%;
+}
+
+#editForm {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(234, 234, 234);
+  padding: 20px;
+  box-shadow: 0px 0 20px 0px black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 20%;
+}
+
+.inputStyle {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+
+
+.editButtons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.editButtons input {
+  width: 40%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Sip form */
+
+#sipForm {
+  
+}
+
+#sipInput {
+  width: 100%;
 }
