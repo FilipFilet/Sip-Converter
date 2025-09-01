@@ -35,7 +35,7 @@ function App() {
         </div>
         <SipForm onConvert={handleSipChange} currentShots={sipToShots} currentDrinks={sipToDrinks}></SipForm> {/* Sending "handleSipChange" to the SipForm as a prop */}
         <p>Converted sips into {drinks} drinks, {shots} Shots and {sips} Sips</p>
-        <button id="editBtn" onClick={() => setShowModal(true)}>Edit Sip Conversion</button>
+        <button id="editBtn" className='conversionButton' onClick={() => setShowModal(true)}>Edit Sip Conversion</button>
       </section>
 
       {/* Possible that an interface would be cleaner */}

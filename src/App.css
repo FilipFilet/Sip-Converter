@@ -28,7 +28,8 @@ body {
   align-items: center;
 }
 
-#headerWrapper, #currentConversions {
+#headerWrapper,
+#currentConversions {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,12 +85,32 @@ body {
   cursor: pointer;
 }
 
+
+
+.conversionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.conversionButton {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
 /* Sip form */
 
-#sipForm {
-  
-}
+#sipForm {}
 
 #sipInput {
   width: 100%;
+  margin-bottom: 10px;
+}
+
+
+/* media queries */
+@media (max-width: 768px) {
+  #editForm {
+    width: 80%;
+  }
 }
