@@ -9,6 +9,14 @@ body {
   background-color: #f0f0f0;
 }
 
+button, input[type="button"] {
+  cursor: pointer;
+}
+
+.hiddenOutput {
+  visibility: hidden;
+}
+
 /* wrappers */
 #content {
   display: flex;

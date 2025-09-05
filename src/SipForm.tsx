@@ -44,6 +44,7 @@ export default function SipForm({ onConvert, currentShots, currentDrinks }: { on
         else {
             setSipAmount(Number(value));
         }
+
     }
 
     return (
@@ -53,7 +54,8 @@ export default function SipForm({ onConvert, currentShots, currentDrinks }: { on
                 <div className="conversionButtons">
                     <input className="conversionButton" type="button" value="Convert to drinks" onClick={() => handleConvert('drinks')} />
                     <input className="conversionButton" type="button" value="Convert to shots" onClick={() => handleConvert('shots')} />
-                    <input className="conversionButton" type="button" value="Feeling lucky?" onClick={() => handleConvert('lucky')} />
+                    {/*  Still under development - dont know quite what it should do yet */}
+                    {/* <input className="conversionButton" type="button" value="Feeling lucky?" onClick={() => handleConvert('lucky')} /> */}
                 </div>
 
             </form>

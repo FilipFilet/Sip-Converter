@@ -26,16 +26,19 @@ function App() {
     <main id="content">
       <section id="converterWrapper">
         <header id="headerWrapper">
-          <h1>Sip Converter</h1>
-          <i>Converting your sips on the fly</i>
+          <h1>SlurkKompasset</h1>
+          <i>Konverterer dine slurke på farten!</i>
         </header>
         <div id="currentConversions">
-          <p>1 shot = {sipToShots} sips</p>
-          <p>1 drink = {sipToDrinks} sips</p>
+          <p>1 shot = {sipToShots} slurke</p>
+          <p>1 drink = {sipToDrinks} slurke</p>
         </div>
         <SipForm onConvert={handleSipChange} currentShots={sipToShots} currentDrinks={sipToDrinks}></SipForm> {/* Sending "handleSipChange" to the SipForm as a prop */}
-        <p>Converted sips into {drinks} drinks, {shots} Shots and {sips} Sips</p>
-        <button id="editBtn" className='conversionButton' onClick={() => setShowModal(true)}>Edit Sip Conversion</button>
+        
+        <button id="editBtn" className='conversionButton' onClick={() => setShowModal(true)}>Redigér konvertering</button>
+
+
+        <p className={(shots > 0 || drinks > 0 || sips > 0 ? '' : 'hidden')}>Du skal drikke {drinks} drinks, {shots} shots og {sips} slurke</p>
       </section>
 
       {/* Possible that an interface would be cleaner */}
