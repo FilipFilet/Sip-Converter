@@ -26,7 +26,7 @@ function App() {
     <main id="content">
       <section id="converterWrapper">
         <header id="headerWrapper">
-          <h1>SlurkKompasset</h1>
+          <h1>DrukKompasset</h1>
           <i>Konverterer dine slurke på farten!</i>
         </header>
         <div id="currentConversions">

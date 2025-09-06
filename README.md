@@ -1,5 +1,5 @@
-# Hvad er SlurkKompasset?
-SlurkKompasest er en lille webapp der kan bruges til at konvertere slurke til genstande eller shots, hvis man nu lige er usikker på hvor mange slurke der går på en genstand eller shot.
+# Hvad er DrukKompasset?
+DrukKompasest er en lille webapp der kan bruges til at konvertere slurke til genstande eller shots, hvis man nu lige er usikker på hvor mange slurke der går på en genstand eller shot.
 Webappen er derfor meget alsidig, men kan bedst bruges i sammenhæng med andre drukspil, hvor man får et antal slurke man skal drikke.
 
 # Planlagte funktionaliteter
